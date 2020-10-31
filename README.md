@@ -7,7 +7,8 @@ cd ios && pod install
 cd ..
 ```
 
-Run:
+### Run
+
 If running on Android device:
 ```
 yarn android
