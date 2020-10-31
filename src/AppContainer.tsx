@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { createAppContainer, SafeAreaView } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
+import { VideoContainer } from './components/VideoContainer';
 import { getNavigationOptions } from './HeaderHelper';
 
 
@@ -11,7 +12,7 @@ class HomeScreen extends React.Component {
         return (
             <SafeAreaView style={{flex:1}}>
                 <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-                    <Text>Home Screen</Text>
+                    <VideoContainer/>
                 </View>
             </SafeAreaView>
 
