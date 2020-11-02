@@ -11,28 +11,29 @@ import Video from 'react-native-video';
 
 const VIDEO_URL = "https://filesamples.com/samples/video/mp4/sample_1280x720.mp4";
 
-const VideoContainer = ()=>{
-    const onBuffer=()=>{}
-    const videoError=()=>{}
+const VideoContainer = () => {
+    const onBuffer = () => { }
+    const videoError = () => { }
 
-    return (<Video source={{uri: VIDEO_URL}}   
-                                      
-    onBuffer={onBuffer}                
-    onError={videoError}               
-    style={styles.backgroundVideo} />
-)
+    return (
+
+        <Video source={{ uri: VIDEO_URL }}
+            onBuffer={onBuffer}
+            onError={videoError}
+            style={styles.backgroundVideo} />
+    )
 }
 
-export {VideoContainer}
+export { VideoContainer }
 
 // Later on in your styles..
 var styles = StyleSheet.create({
     backgroundVideo: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      bottom: 0,
-      right: 0,
-      backgroundColor:'blue'
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        backgroundColor: 'blue'
     },
-  });
+});
