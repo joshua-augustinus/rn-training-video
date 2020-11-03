@@ -1,4 +1,4 @@
-package com.awesomeapp;
+package com.training.video;
 
 import android.app.Application;
 import android.util.Log;
